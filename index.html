@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lerning For Everyone</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="icon" href="image/oi-01.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+         <header>
+         <a href="#Home" id="logo"><img src="image/logo-01.svg" alt="" class="logo"></a>
+         	
+         <i class="fa fa-bars list"
+         onclick="document.getElementById('a').style.display='block'
+         document.getElementById('b').style.display='block'
+         document.getElementById('c').style.display='block'
+         document.getElementById('name2').style.display='block'">
+        </i>
+         <nav class="header-nav" id="nav-1">
+         <a href="#Home"id="a"
+          onfocus=
+         "document.getElementById('a').style.border='1px solid #f5a425',
+         document.getElementById('b').style.border='none',
+         document.getElementById('c').style.border='none',
+         document.getElementById('d').style.border='none'"
+         >Home
+         </a>
+        
+         <a href="#Courses" id="b"
+         onfocus="document.getElementById('b').style.border='1px solid #f5a425'
+         ,document.getElementById('a').style.border='none'
+         ,document.getElementById('c').style.border='none'
+         ,document.getElementById('d').style.border='none'"
+         >
+          courses
+         </a>
+         <a href="#About Us" id="c"
+         onfocus="document.getElementById('c').style.border='1px solid #f5a425'
+         ,document.getElementById('a').style.border='none'
+         ,document.getElementById('b').style.border='none'
+         ,document.getElementById('d').style.border='none'">
+          about as 
+         </a>
+         <a href="#contact" id="d"
+          onfocus="document.getElementById('d').style.border='1px solid #f5a425'
+          ,document.getElementById('a').style.border='none'
+          ,document.getElementById('b').style.border='none'
+          ,document.getElementById('c').style.border='none'">
+         contacts
+         </a>
+         </nav>
+         <a href="#" id="name2"
+         onclick="document.getElementById('create-account').style.display='block'">
+         
+         create account
+        </a>
+         </header>
+         <!-- end header -->
+         <section class="main-section" id="Home">
+    <video src="/image/course-video.mp4" autoplay loop muted width="100%" height="100%"></video>
+    <div class="caption">
+           <h6>Welcome to all in our academy.</h6>
+           <h2><span> education</span> It is not just for the rich</h2><br>
+           <a href="#Courses">Let's start</a>
+    </div>
+    <div class="card">
+        <div class="card1">
+        <div class="logo">
+            <a href="#Courses"><i class="fa fa-pencil"></i> New Courses</a>
+        </div>
+        </div>
+        <!-- ***************************************************** -->
+        <div class="card1">
+        <div class="logo">
+            <a href="#About Us"><i class="fa fa-question"></i> Why You Choose Us</a>
+        </div>
+        </div>
+        <!-- ***************************************************** -->
+        <div class="card1">
+        <div class="logo">
+            <a href="#our-teachers"><i class="fa fa-user"></i>Our Teachers</a>
+        </div>
+        <!-- ***************************************************** -->
+    </div>
+    <div class="container-account" id="create-account">
+        <div class="main-container">
+         <img src="image/web-logo.png" alt="" class="login-logo">
+               <p class="log-in">log in</p>
+               <i class="fa fa-times close-btn"
+               onclick="document.getElementById('create-account').style.display='none'"></i>
+          <form class="form-1">
+         <span>Enter Your Name Please</span><input type="text" maxlength="40" required name="name" id="name">
+         <span>enter your new password</span><input type="password" required name="password">
+         <span>Enter Your Email</span><input type="text" name="email" >
+         <span>Remeber me</span><input type="checkbox" class="chk-form" id="chk">
+          <div class="container-btn">
+         
+         <input type="reset" value="Clear" class="form-btn bt2" id="clear-btn">
+          </div>
+          </form>
+          <input type="submit" value="Send Data" class="form-btn bt1"
+          onclick="document.getElementById('name2').innerHTML='hello'+'   '+ document.getElementById('name').value
+          document.getElementById('create-account').style.display='none'">
+        </div>
+       </div>
+       <script src="/js/main.js"></script>
+         </section>
+
+          <!-- end main section -->
+
+        <section class="secound" id="About Us">
+         <div class="sec-title">
+          <h6>Why You Choose Us</h6>
+         </div>
+         <div class="controlar">
+          <p class="controlar-title-1 ss">Best Education </p>  
+         <button class="controlar-btn-1 ss" onfocus=
+         "document.getElementById('img').src='/image/choose-us-image-01.png',
+          document.getElementById('h3').innerText='Best Education' ,
+          document.getElementById('p').innerText='Where it works to support our trainees with the finest and best lessons and educational chains by the most skilled teachers in the Middle East .'"
+          onclick=
+          "document.getElementById('img').src='/image/choose-us-image-01.png',
+          document.getElementById('h3').innerText='Best Education' ,
+          document.getElementById('p').innerText='Where it works to support our trainees with the finest and best lessons and educational chains by the most skilled teachers in the Middle East .'">
+         </button>
+         <p class="controlar-title-2 ss">experience certificate </p>
+         <button class="controlar-btn-2 ss"
+         onclick="document.getElementById('img').src='/image/choose-us-image-02.png',
+         document.getElementById('h3').innerText='experience certificate',
+         document.getElementById('p').innerText='We are working to provide our students with accredited and recognized Arab experience certificates that enable them to support their Cv'">
+         </button>
+         <p class="controlar-title-3 ss">Real Meeting </p>
+         <button class="controlar-btn-3 ss"
+         onclick="document.getElementById('img').src='/image/choose-us-image-03.png',
+         document.getElementById('h3').innerText='Real Meeting',
+         document.getElementById('p').innerText='Where we are working on setting up training courses on reality to achieve the greatest benefit for people who do not like virtual education'">
+         </button>
+         </div>
+         <div class="containt-item">
+         <figure>
+            <img src="/image/choose-us-image-01.png" id="img">
+         </figure>
+         <figcaption>
+            <h3 id="h3">
+                Lorem ipsum dolor
+            </h3>
+            <p id="p">
+                Where it works to support our trainees with the
+                 finest and best lessons and educational
+                 chains by the most skilled teachers in the Middle East .
+            </p>
+         </figcaption>
+         </div>
+         
+         </section>
+         
+          <!-- end secound section -->
+
+         <section class="courses" id="Courses">
+
+            <h6>Choose Your Course</h6>
+            <div class="content-card">
+                
+                <div class="card-course">
+                    <div class="image" id="part1">
+                        <img src="/image//c1.jpg" alt="">
+                        <h3>Html For Beginners</h3>
+                        <p>The course deals with the most important axes of the basics of the HTML language for beginners, from the beginning to professionalism, with practical professional projects</p>
+                        <img src="image/author1.jpg" class="author">
+                        <span>Free</span>
+                    </div>
+                    
+                    <a href="https://www.youtube.com/playlist?list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji" class="link-card"></a>
+                    <!-- -----------------------------------------1------------------------------------------- -->
+                    <div class="image" id="part2">
+                        <img src="/image/c6.jpg" alt="">
+                        <h3>PHP For Beginners</h3>
+                        <p>The course deals with the most important axes of the basics of the PHP language for beginners, from the beginning to professionalism, with practical professional projects</p>
+                        <img src="image/author1.jpg" class="author">
+                        <span>Free</span>
+                    </div>
+                    <a href="https://www.youtube.com/playlist?list=PLDoPjvoNmBAy41u35AqJUrI-H83DObUDq" class="link-card"></a>
+                    <!-- ---------------------------------------------2--------------------------------------- -->
+                    <div class="image" id="part11">
+                        <img src="/image/c11.png" alt="">
+                        <h3>bootstrap BOOTCAMP</h3>
+                        <p>The course deals with the most important axes of the basics of the In bootstrap Application for beginners, from the beginning to professionalism, with practical professional projects</p>
+                        <img src="image/author3.jpg" class="author">
+                        <span>Free</span>
+                    </div>
+                    <a href="https://www.youtube.com/playlist?list=PLDoPjvoNmBAyvm7f--dc6XqkpfDcen_vQ" class="link-card"></a>
+                    <!-- ------------------------------------------------3------------------------------------ -->
+                </div>
+                <!-- ************************************************************************************************************************ -->
+                <div class="card-course">
+                    <div class="image" id="part3">
+                        <img src="/image/c2.jpeg" alt="">
+                        <h3>Python For Beginners</h3>
+                        <p>The course deals with the most important axes of the basics of the Python language for beginners, from the beginning to professionalism, with practical professional projects</p>
+                        <img src="image/author2.jpeg" class="author">
+                        <span>Free</span>
+                    </div>
+                    <a href="https://www.youtube.com/watch?v=Xa6rdMDbMLw" class="link-card"></a>
+                <!-- ------------------------------------------------1------------------------------------ -->
+                <div class="image" id="part4">
+                    <img src="/image/c7.jpg" alt="" >
+                    <h3>scratch for children</h3>
+                    <p>The course deals with the most important axes of the basics of the scratch language for children, from the beginning to professionalism, with practical professional projects</p>
+                    <img src="image/author2.jpeg" class="author">
+                    <span>Free</span>
+                </div>
+                <a href="https://www.youtube.com/watch?v=Xa6rdMDbMLw&list=RDCMUCveX_0uBOHVHbpV838OGXVA&start_radio=1&rv=Xa6rdMDbMLw&t=0" class="link-card"></a>
+                <!-- ------------------------------------------------2------------------------------------ -->
+                <div class="image" id="part12">
+                    <img src="/image/c12.png" alt="" >
+                    <h3>c++ For Beginners</h3>
+                    <p>The course deals with the most important axes of the basics of the c++ language for beginners, from the beginning to professionalism, with practical professional projects</p>
+                    <img src="image/author2.jpeg" class="author">
+                    <span>Free</span>
+                </div>
+                <a href="https://www.youtube.com/playlist?list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS" class="link-card"></a>
+                <!-- ------------------------------------------------3------------------------------------ -->
+                </div>
+                <!-- ************************************************************************************************************************ -->
+                <div class="card-course">
+                    <div class="image" id="part5">
+                        <img src="/image/c3.png" alt="">
+                        <h3>Css For Beginners</h3>
+                        <p>The course deals with the most important axes of the basics of the CSS language for beginners, from the beginning to professionalism, with practical professional projects</p>
+                        <img src="image/author1.jpg" class="author">
+                        <span>Free</span>
+                    </div>
+                    <a href="https://www.youtube.com/playlist?list=PLDoPjvoNmBAzjsz06gkzlSrlev53MGIKe" class="link-card"></a>
+                    <!-- ------------------------------------------------1------------------------------------ -->
+                    <div class="image" id="part6">
+                        <img src="/image/c8.png" alt="">
+                        <h3>Adobe id</h3>
+                        <p>The course deals with the most important axes of the basics of the adobe id  for beginners, from the beginning to professionalism, with practical professional projects</p>
+                        <img src="image/author1.jpg" class="author">
+                        <span>Free</span>
+                    </div>
+                    <a href="https://www.youtube.com/playlist?list=PLDoPjvoNmBAzjsz06gkzlSrlev53MGIKe" class="link-card"></a>
+                    <!-- ------------------------------------------------2------------------------------------ -->
+                    <div class="image" id="part13">
+                        <img src="/image/c13.png" alt="">
+                        <h3>C# For Beginners</h3>
+                        <p>The course deals with the most important axes of the basics of the c# language for beginners, from the beginning to professionalism, with practical professional projects</p>
+                        <img src="image/author1.jpg" class="author">
+                        <span>Free</span>
+                    </div>
+                    <a href="https://www.youtube.com/playlist?list=PLDoPjvoNmBAzjsz06gkzlSrlev53MGIKe" class="link-card"></a>
+                    <!-- ------------------------------------------------3------------------------------------ -->
+                </div>
+                <!-- ************************************************************************************************************************ -->
+                <div class="card-course">
+                    <div class="image" id="part7">
+                        <img src="/image/c4.png" alt="">
+                        <h3>PhotoShop For Beginners</h3>
+                        <p>The course deals with the most important axes of the basics of the PHOTOSHOP for beginners, from the beginning to professionalism, with practical professional projects</p>
+                        <img src="image/author3.jpg" class="author">
+                        <span>Free</span>
+                    </div>
+                    <a href="https://www.youtube.com/playlist?list=PLPTNqXpQ2tbjJjJiwegGONmGK4-mzz2Qj" class="link-card"></a>
+                    <!-- ------------------------------------------------1------------------------------------ -->
+                    <div class="image" id="part8">
+                        <img src="/image/c9.png" alt="">
+                        <h3>laravel For Beginners</h3>
+                        <p>The course deals with the most important axes of the basics of the laravel for beginners, from the beginning to professionalism, with practical professional projects</p>
+                        <img src="image/author3.jpg" class="author">
+                        <span>Free</span>
+                    </div>
+                    <a href="https://www.youtube.com/playlist?list=PLPTNqXpQ2tbjJjJiwegGONmGK4-mzz2Qj" class="link-card"></a>
+                    <!-- ------------------------------------------------2------------------------------------ -->
+                    <div class="image" id="part14">
+                        <img src="/image/c14.png" alt="">
+                        <h3>sass For Beginners</h3>
+                        <p>The course deals with the most important axes of the basics of the sass for beginners, from the beginning to professionalism, with practical professional projects</p>
+                        <img src="image/author3.jpg" class="author">
+                        <span>Free</span>
+                    </div>
+                    <a href="https://www.youtube.com/playlist?list=PLPTNqXpQ2tbjJjJiwegGONmGK4-mzz2Qj" class="link-card"></a>
+                    <!-- ------------------------------------------------3------------------------------------ -->
+                </div>
+                <!-- ************************************************************************************************************************ -->
+                <div class="card-course">
+                    <div class="image" id="part9">
+                        <img src="/image/c5.webp" alt="">
+                        <h3>react.js For Beginners</h3>
+                        <p>The course deals with the most important axes of the basics of the react.js for beginners, from the beginning to professionalism, with practical professional projects.</p>
+                        <img src="image/author3.jpg" class="author">
+                        <span>Free</span>
+                    </div>
+                    <a href="https://www.youtube.com/playlist?list=PLPTNqXpQ2tbhfi46e523TelnrzNDddVd6" class="link-card"></a>
+                    <!-- ------------------------------------------------1------------------------------------ -->
+                    <div class="image" id="part10">
+                    <img src="/image/c10.png">
+                    <h3>react.js For Beginners</h3>
+                    <p>The course deals with the most important axes of the basics of the react.js for beginners, from the beginning to professionalism, with practical professional projects.</p>
+                    <img src="image/author3.jpg" class="author">
+                    <span>Free</span>
+                    </div>
+                
+                <a href="https://www.youtube.com/playlist?list=PLPTNqXpQ2tbhfi46e523TelnrzNDddVd6" class="link-card"></a>
+                <!-- ------------------------------------------------2------------------------------------ -->
+                <div class="image" id="part15">
+                    <img src="/image/c15.png">
+                    <h3>jquery For Beginners</h3>
+                    <p>The course deals with the most important axes of the basics of the jquery for beginners, from the beginning to professionalism, with practical professional projects.</p>
+                    <img src="image/author3.jpg" class="author">
+                    <span>Free</span>
+                    </div>
+                <a href="https://www.youtube.com/playlist?list=PLPTNqXpQ2tbhfi46e523TelnrzNDddVd6" class="link-card"></a>
+            </div>
+                <!-- ------------------------------------------------3------------------------------------ -->
+                </div>
+                <!-- ************************************************************************************************************************ -->
+            <div class="buttons">
+                <button class="btn" 
+                onclick=
+                "document.getElementById('part2').style.display='none'
+                document.getElementById('part4').style.display='none'
+                document.getElementById('part6').style.display='none'
+                document.getElementById('part8').style.display='none'
+                document.getElementById('part10').style.display='none'
+                document.getElementById('part1').style.display='block'
+                document.getElementById('part3').style.display='block'
+                document.getElementById('part5').style.display='block'
+                document.getElementById('part7').style.display='block'
+                document.getElementById('part10').style.display='block'
+                document.getElementById('part11').style.display='none'
+                document.getElementById('part12').style.display='none'
+                document.getElementById('part13').style.display='none'
+                document.getElementById('part14').style.display='none'
+                document.getElementById('part15').style.display='none'">
+                </button>
+                <button class="btn"
+                onclick=
+                "document.getElementById('part1').style.display='none'
+                document.getElementById('part3').style.display='none'
+                document.getElementById('part5').style.display='none'
+                document.getElementById('part7').style.display='none'
+                document.getElementById('part9').style.display='none'
+                document.getElementById('part2').style.display='block'
+                document.getElementById('part4').style.display='block'
+                document.getElementById('part6').style.display='block'
+                document.getElementById('part8').style.display='block'
+                document.getElementById('part10').style.display='block'
+                document.getElementById('part11').style.display='none'
+                document.getElementById('part12').style.display='none'
+                document.getElementById('part13').style.display='none'
+                document.getElementById('part14').style.display='none'
+                document.getElementById('part15').style.display='none'">
+                </button>
+                <button class="btn"
+                onclick=
+                "document.getElementById('part1').style.display='none'
+                document.getElementById('part3').style.display='none'
+                document.getElementById('part5').style.display='none'
+                document.getElementById('part7').style.display='none'
+                document.getElementById('part9').style.display='none'
+                document.getElementById('part2').style.display='none'
+                document.getElementById('part4').style.display='none'
+                document.getElementById('part6').style.display='none'
+                document.getElementById('part8').style.display='none'
+                document.getElementById('part10').style.display='none'
+                document.getElementById('part11').style.display='block'
+                document.getElementById('part12').style.display='block'
+                document.getElementById('part13').style.display='block'
+                document.getElementById('part14').style.display='block'
+                document.getElementById('part15').style.display='block'">
+
+                </button>
+            </div>
+         </section>
+         
+          <!-- end courses section  --> 
+
+         <section class="our-teachers" id="our-teachers">
+            <div class="container-teacher">
+                <h2>Our Coaches</h2>
+                <div class="three-teacher">
+                    <div class="teacher">
+                        <div class="teacher-image">
+                            <img src="image/author1.jpg" alt="">
+                        </div>
+                        <div class="teacher-info">
+                            <span>Osama Alzero | FullStack Developer</span>
+                        </div>
+                        <div class="teacher-links">
+                            <a href="https://github.com/ElzeroWebSchool"><img src="/image/icon1.png" class="icon-link"></a>
+                            <a href="https://www.youtube.com/channel/UCSNkfKl4cU-55Nm-ovsvOHQ"><img src="/image/icon2.jpg" class="icon-link"></a>
+                            <a href="https://www.facebook.com/ElzeroWebSchool/"><img src="/image/icon3.png" class="icon-link"></a>
+                        </div>
+                    </div>
+                    <div class="teacher">
+                        <div class="teacher-image">
+                            <img src="image/author2.jpeg" alt="">
+                        </div>
+                        <div class="teacher-info">
+                            <span>Islam Mahfouz | FullStack Developer</span>
+                        </div>
+                        <div class="teacher-links">
+                            <a href="https://github.com/islam-mahfouz"><img src="/image/icon1.png" class="icon-link"></a>
+                            <a href="https://www.youtube.com/c/codezilla"><img src="/image/icon2.jpg" class="icon-link"></a>
+                            <a href="https://www.facebook.com/codezilla.channel/"><img src="/image/icon3.png" class="icon-link"></a>
+                        </div>
+                    </div>
+                    <div class="teacher">
+                        <div class="teacher-image">
+                            <img src="image/author3.jpg" alt="">
+                        </div>
+                        <div class="teacher-info">
+                            <span>Nour Homsi | Graphic Design</span>
+                        </div>
+                        <div class="teacher-links">
+                            <a href="https://www.nourhomsi.com/"><img src="/image/icon4.png" class="icon-link"></a>
+                            <a href="https://www.youtube.com/channel/UCLcFW31aAxyqsDxtALNnVTw"><img src="/image/icon2.jpg" class="icon-link"></a>
+                            <a href="https://www.facebook.com/drnourhomsi/"><img src="/image/icon3.png" class="icon-link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         <!-- end teachers section -->
+         
+         <section class="contact" id="contact">
+             <div class="contact-title">
+             <h6>Let's Keep In Touch</h6>
+             </div>
+             <div class="continer">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3327.279291954061!2d36.319366423697105!3d33.49410997337208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1518e1c052cf5fc3%3A0x439a09558b87af44!2z2KfZhNio2YbYp9ihINin2YTYo9it2YXYsQ!5e0!3m2!1sar!2s!4v1684785236656!5m2!1sar!2s"
+                 width="500" height="450" style="border:0;" allowfullscreen=""
+                  loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+               <form>
+                <input type="text" placeholder="your name" required>
+                <input type="email" placeholder="your email" required><br>
+                 <textarea cols="48" rows="6" maxlength="60"required placeholder="your message..."></textarea><br>
+                 <input type="submit" value="send your message" id="submit-btn">
+               </form>
+               </div>
+             </div>
+         </section>
+         
+          <!-- end contact section -->
+
+         <footer>
+            <p> <i class="fa fa-copyright"></i> copyright 2023 by lerning for everyone  |  design by : <span>creative team</span></p>
+         </footer>
+         
+         <!-- end footer -->
+
+</body>
+</html>
